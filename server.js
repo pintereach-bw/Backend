@@ -14,6 +14,7 @@ server.use(express());
 server.use(express.json());
 server.use(helmet());
 server.use(cors(corsOptions));
+server.use(logger());
 
 server.get("/", (req, res) => {
   res.send(`<h1>THE SERVER IS LIVE!</h1>`);

@@ -14,7 +14,8 @@ exports.seed = function(knex, Promise) {
           image:
             "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
           user_id: 1,
-          category_id: "Game"
+          category_id: 1,
+          category_name: "Game"
         },
         {
           id: 2,
@@ -25,7 +26,8 @@ exports.seed = function(knex, Promise) {
           image:
             "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/02/24144435/0_vbw4wQW_Xq2_3eOo.jpg",
           user_id: 2,
-          category_id: "Game"
+          category_id: 2,
+          category_name: "Game"
         },
         {
           id: 3,
@@ -36,7 +38,8 @@ exports.seed = function(knex, Promise) {
           image:
             "https://cdn.arstechnica.net/wp-content/uploads/2015/02/lol-640x360.png",
           user_id: 3,
-          category_id: "Game"
+          category_id: 3,
+          category_name: "Game"
         }
       ]);
     });
