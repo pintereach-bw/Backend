@@ -4,7 +4,9 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+const restricted = require("../middlewares/restricted-middleware");
+
+router.get("/", restricted, async (req, res) => {
   try {
     const articles = await Articles.find();
     res
@@ -17,7 +19,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", restricted, async (req, res) => {
   try {
     const articles = await Articles.findById(req.params.id);
     res.status(200).json(articles);
@@ -29,7 +31,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", restricted, async (req, res) => {
   try {
     const articles = await Articles.insert(req.body);
     res.status(200).json({
@@ -44,7 +46,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", restricted, async (req, res) => {
   try {
     const articles = await Articles.update(req.params.id, req.body);
     res.status(200).json({ articles, message: "You have edited this article" });
@@ -53,7 +55,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", restricted, async (req, res) => {
   try {
     const articles = await Articles.remove(req.params.id);
     res
