@@ -1,6 +1,6 @@
-const express   = require("express");
-const helmet    = require("helmet");
-const cors      = require("cors");
+const express = require("express");
+const helmet = require("helmet");
+const cors = require("cors");
 
 const server = express();
 
@@ -21,6 +21,7 @@ server.get("/", (req, res) => {
 
 // # Define Routes # //
 server.use("/api/auth", require("./auth/auth-router")); // REGISTRATION & LOGIN
+server.use("/api/articles", require("./routes/articles-route")); // Article Route
 
 // # Logger # //
 function logger(req, res, next) {
