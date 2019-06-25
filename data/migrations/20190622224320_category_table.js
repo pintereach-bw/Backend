@@ -1,9 +1,8 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable("category", category => {
+  return knex.schema.alterTable("category", category => {
     category.increments();
 
-    category
-    .string("name", 255)
+    category.string("name", 255);
   });
 };
 
