@@ -10,7 +10,6 @@ router.get("/", restricted, async (req, res) => {
   try {
     const articles = await Articles.find();
     res.status(200).json(articles);
-    // console.log(res)
   } catch (err) {
     res
       .status(500)
