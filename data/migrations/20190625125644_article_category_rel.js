@@ -6,11 +6,6 @@ exports.up = function(knex, Promise) {
       .references("id")
       .inTable("category");
 
-    articles
-      .string("category_name")
-      .unsigned()
-      .references("name")
-      .inTable("category");
   });
 };
 

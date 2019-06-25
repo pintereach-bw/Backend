@@ -15,6 +15,8 @@ exports.up = function(knex, Promise) {
       .unsigned()
       .references("id")
       .inTable("users");
+
+    articles.string("category", 250);
   });
 };
 
