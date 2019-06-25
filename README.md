@@ -52,7 +52,7 @@ Should Get Status 200
             "image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
             "user_id": 1,
             "category_id": 1,
-            "category_name": "Game"
+            "category": "Game"
         },
         {
             "id": 2,
@@ -62,7 +62,7 @@ Should Get Status 200
             "image": "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/02/24144435/0_vbw4wQW_Xq2_3eOo.jpg",
             "user_id": 2,
             "category_id": 2,
-            "category_name": "Game"
+            "category: "Game"
         },
     ],
     "message": "You have gotten articles back"
@@ -85,7 +85,7 @@ Should Get Status 200 if added successfully.
 	"image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
 	"user_id": 1,
 	"category_id": 1,
-	"category_name": "Test Article"
+	"category": "Test Article"
 }
  
 ```
@@ -110,7 +110,7 @@ PUT / https://pintreachbackend.herokuapp.com/api/articles/:id
 	"image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
 	"user_id": 1,
 	"category_id": 1,
-	"category_name": "Updated Test Article"
+	"category": "Updated Test Article"
 }
  
 ```

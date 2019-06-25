@@ -10,10 +10,11 @@ const router = express.Router();
 
 router.post("/register", async (req, res) => {
   let { username, password } = req.body;
-  if (!username && !password) {
+  console.log(username , password)
+  if (!username || !password) {
     res
       .status(401)
-      .json({ message: "please enter a valid username and password" });
+      .json({ message: "please enter a valid username and passwordsdfsdfsdf" });
   } else {
     // password gets re-hashed 2 ^ 8 times : Larger the number logster it takes
     const hash = bcrypt.hashSync(password, 8);
