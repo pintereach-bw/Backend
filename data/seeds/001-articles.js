@@ -10,12 +10,13 @@ exports.seed = function(knex, Promise) {
           title: "Pokemon electronic game",
           summary:
             "Pokémon, electronic game series from Nintendo that debuted in Japan in 1995 and later became wildly popular in the United States. The series, originally produced for the company’s Game Boy line of handheld consoles, was introduced in 1998 to the United States with two titles, known to fans as Red and Blue.",
-          link: "https://www.britannica.com/topic/Pokemon-electronic-game",
+          link:
+            "https://www.britannica.com/topic/Pokemon-electronic-game",
           image:
             "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
           user_id: 1,
           category_id: 1,
-          category_name: "Game"
+          category: "Game"
         },
         {
           id: 2,
@@ -27,7 +28,7 @@ exports.seed = function(knex, Promise) {
             "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/02/24144435/0_vbw4wQW_Xq2_3eOo.jpg",
           user_id: 2,
           category_id: 2,
-          category_name: "Game"
+          category: "Game"
         },
         {
           id: 3,
@@ -39,7 +40,7 @@ exports.seed = function(knex, Promise) {
             "https://cdn.arstechnica.net/wp-content/uploads/2015/02/lol-640x360.png",
           user_id: 3,
           category_id: 3,
-          category_name: "Game"
+          category: "Game"
         }
       ]);
     });
