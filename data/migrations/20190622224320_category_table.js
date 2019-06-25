@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.alterTable("category", category => {
+  return knex.schema.createTable("category", category => {
     category.increments();
 
     category.string("name", 255);
