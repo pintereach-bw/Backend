@@ -51,7 +51,6 @@ Should Get Status 200
             "link": "https://www.britannica.com/topic/Pokemon-electronic-game",
             "image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
             "user_id": 1,
-            "category_id": 1,
             "category": "Game"
         },
         {
@@ -61,7 +60,6 @@ Should Get Status 200
             "link": "https://en.wikipedia.org/wiki/Dota_2",
             "image": "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/02/24144435/0_vbw4wQW_Xq2_3eOo.jpg",
             "user_id": 2,
-            "category_id": 2,
             "category: "Game"
         },
     ],
@@ -84,7 +82,6 @@ Should Get Status 200 if added successfully.
 	"link": "https://www.britannica.com/topic/Pokemon-electronic-game",
 	"image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
 	"user_id": 1,
-	"category_id": 1,
 	"category": "Test Article"
 }
  
@@ -109,7 +106,6 @@ PUT / https://pintreachbackend.herokuapp.com/api/articles/:id
 	"link": "https://www.britannica.com/topic/Pokemon-electronic-game",
 	"image": "https://cdn.britannica.com/s:700x450/70/122270-004-0564DF2A.jpg",
 	"user_id": 1,
-	"category_id": 1,
 	"category": "Updated Test Article"
 }
  

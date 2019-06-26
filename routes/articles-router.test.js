@@ -20,6 +20,21 @@ describe("article-route.js with middleware", () => {
     const res = await request(server).get("/api/articles/:id/");
     expect(res.status).toBe(401);
   });
+
+  it("should return 401 unauthorized for POST /", async () => {
+    const res = await request(server).post("/api/articles/");
+    expect(res.status).toBe(401);
+  });
+
+  it("should return 401 unauthorized for PUT /", async () => {
+    const res = await request(server).put("/api/articles/:id");
+    expect(res.status).toBe(401);
+  });
+
+  it("should return 401 unauthorized for Delete /", async () => {
+    const res = await request(server).delete("/api/articles/:id");
+    expect(res.status).toBe(401);
+  });
 });
 
 // describe("Should not POST '/api/articles'", () => {
