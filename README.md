@@ -1,6 +1,6 @@
 ﻿# # [Pintereach Backend](https://github.com/pintereach-bw)
 
-Hi! This is the back-end documentation for  the **[Pintereach](https://github.com/pintereach-bw)**  project.
+Hi! This is the back-end documentation for the **[Pintereach](https://github.com/pintereach-bw)** project.
 This is the link to our [TDD FORM](https://docs.google.com/document/d/1udh5Wk8TOqJB-R949SRy242c9HR9ayK8Wi6tZN2WZwU/edit) of what our application accomplishes.
 
 # Database Design
@@ -8,11 +8,12 @@ This is the link to our [TDD FORM](https://docs.google.com/document/d/1udh5Wk8TO
 [Image link to the design](https://imgur.com/a/B6CkLxA)
 
 # Authentication
+
 <p>  What is the preferred way of using the API? The API supplies a token upon logging in and is required to perform any CRUD actions.</p>
 
-
 # Endpoints
-### Registration 
+
+### Registration
 
 POST / https://pintreachbackend.herokuapp.com/api/auth/register
 
@@ -43,8 +44,6 @@ GET / https://pintreachbackend.herokuapp.com/api/articles/
 ```
 Should Get Status 200
 {
-    "articles": [
-        {
             "id": 1,
             "title": "Pokemon electronic game",
             "summary": "Pokémon, electronic game series from Nintendo that debuted in Japan in 1995 and later became wildly popular in the United States. The series, originally produced for the company’s Game Boy line of handheld consoles, was introduced in 1998 to the United States with two titles, known to fans as Red and Blue.",
@@ -62,9 +61,7 @@ Should Get Status 200
             "user_id": 2,
             "category: "Game"
         },
-    ],
     "message": "You have gotten articles back"
-}
 ```
 
 ### Add an article
@@ -84,19 +81,20 @@ Should Get Status 200 if added successfully.
 	"user_id": 1,
 	"category": "Test Article"
 }
- 
+
 ```
 
 ### Delete an article
-##### Path Variables ``id``
+
+##### Path Variables `id`
 
 DELETE / https://pintreachbackend.herokuapp.com/api/articles/:id
 
 ### Update an article
 
-
 PUT / https://pintreachbackend.herokuapp.com/api/articles/:id
-##### Path Variables ``id``
+
+##### Path Variables `id`
 
 ```
  {
@@ -108,5 +106,5 @@ PUT / https://pintreachbackend.herokuapp.com/api/articles/:id
 	"user_id": 1,
 	"category": "Updated Test Article"
 }
- 
+
 ```

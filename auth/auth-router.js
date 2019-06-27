@@ -14,15 +14,16 @@ router.post("/register", async (req, res) => {
   if (!username || !password) {
     res
       .status(401)
-      .json({ message: "please enter a valid username and passwordsdfsdfsdf" });
+      .json({ message: "please enter a valid username and password" });
   } else {
     // password gets re-hashed 2 ^ 8 times : Larger the number logster it takes
     const hash = bcrypt.hashSync(password, 8);
     password = hash;
     try {
-      const users = await Users.add({ username, password });
-      if (users) {
-        res.status(201).json(users);
+      const newUsers = await Users.add({ username, password });
+      if (newUsers) {
+        const token = generateToken(newUsers)
+        res.status(201).json({newUsers, token});
       }
     } catch (error) {
       console.log(error);
