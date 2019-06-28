@@ -7,7 +7,7 @@ const server = express();
 // # Fix CORS Issues on the React Frontend # //
 const corsOptions = {
   credentials: true,
-  origin: "http://localhost:3000"
+  origin: "https://pintreach-bw.netlify.com"
 };
 
 server.use(express());
