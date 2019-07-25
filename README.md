@@ -15,7 +15,7 @@ This is the link to our [TDD FORM](https://docs.google.com/document/d/1udh5Wk8TO
 
 ### Registration
 
-POST / https://pintreachbackend.herokuapp.com/api/auth/register
+POST / https://build-week-pintereach.herokuapp.com/api/auth/register
 
 ```
 Should Get Status 201
@@ -27,7 +27,7 @@ Should Get Status 201
 
 ### Login
 
-POST / https://pintreachbackend.herokuapp.com/api/auth/login
+POST / https://build-week-pintereach.herokuapp.com/api/auth/login
 
 ```
 Should Get Status 200
@@ -39,7 +39,7 @@ Should Get Status 200
 
 ### Get a list of articles
 
-GET / https://pintreachbackend.herokuapp.com/api/articles/
+GET / https://build-week-pintereach.herokuapp.com/api/articles/
 
 ```
 Should Get Status 200
@@ -66,7 +66,7 @@ Should Get Status 200
 
 ### Add an article
 
-POST / https://pintreachbackend.herokuapp.com/api/articles/
+POST / https://build-week-pintereach.herokuapp.com/api/articles/
 
 ```
 Should Get Status 401 if a user does not have a token they are not allowed to post.
@@ -88,11 +88,11 @@ Should Get Status 200 if added successfully.
 
 ##### Path Variables `id`
 
-DELETE / https://pintreachbackend.herokuapp.com/api/articles/:id
+DELETE / https://build-week-pintereach.herokuapp.com/api/articles/:id
 
 ### Update an article
 
-PUT / https://pintreachbackend.herokuapp.com/api/articles/:id
+PUT / https://build-week-pintereach.herokuapp.com/api/articles/:id
 
 ##### Path Variables `id`
 
