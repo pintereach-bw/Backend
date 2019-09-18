@@ -1,4 +1,4 @@
-﻿# # [Pintereach Backend](https://github.com/pintereach-bw)
+﻿# [Pintereach Backend](https://github.com/pintereach-bw)
 
 Hi! This is the back-end documentation for the **[Pintereach](https://github.com/pintereach-bw)** project.
 This is the link to our [TDD FORM](https://docs.google.com/document/d/1udh5Wk8TOqJB-R949SRy242c9HR9ayK8Wi6tZN2WZwU/edit) of what our application accomplishes.
